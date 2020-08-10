@@ -532,7 +532,7 @@ h1 {
 
 /* Mobile Queries */
 
-@media screen and (min-device-width: 240px) and  (max-device-width: 812px) {
+@media screen and (min-width: 240px) and (max-width: 812px) {
 
     h1 {
         font-size: 2.2rem;
