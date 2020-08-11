@@ -7,6 +7,7 @@
 html, body {
     height: 100%;
     transition: 0.7s;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -73,10 +74,38 @@ h1 {
     margin-left: 10px;
     margin-right: 10px;
     transition: 0.5s;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
 }
 
 .dx-navbar a:hover {
     color: #5748f7;
+}
+
+.dx-nav-link::after {
+    content: "" ;
+    width: 0;
+    height: 3px;
+    background: #ffffff;
+    position: absolute;
+    bottom: 0;
+    line-height: 0;
+    border-radius: 100px;
+    display: flex;
+    top: 75px;
+    transition: 0.3s;
+    background: #ffffff;
+}
+
+.dx-active::after {
+    width: 3px;
+}
+
+.dx-nav-link:hover::after {
+    background: #5748f7;
+    width: 60px;
 }
 
 .dx-no-mg {
@@ -727,6 +756,21 @@ h1 {
         margin-bottom: 0;
         margin-top: 1rem;
         font-size: 0.8rem;
+    }
+
+    .dx-progress-container {
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        height: 3px;
+    }
+      
+    .dx-progress-bar {
+        height: 3px;
+        background: #f8be00;
+        width: 0%;
+        border-radius: 100px;
     }
 
 }
