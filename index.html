@@ -29,6 +29,9 @@
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
 
+    <!-- AOS (Anime on Scrolling) CSS and JS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <title>dotzal - Muhammad Afrizal Syafa'atul Amry</title>
   </head>
   <body>
@@ -67,7 +70,7 @@
         </div>
         <!-- Top Section Landing Page -->
             <div class="col-md-10 mx-auto dx-h-70ps">
-                <div class="row h-100 dx-no-mg">
+                <div class="row h-100 dx-no-mg" data-aos="fade-up">
                     <div class="col-md-8 col-xs-12 align-self-center dx-left-lp">
                         <div class="dx-txt-on-lp">
                             Helooooo 👋,
@@ -136,7 +139,7 @@
 
     <!-- Page or Container 2 (About Me) -->
     <div class="dx-container dx-bglightpurple">
-        <div class="row dx-page">
+        <div class="row dx-page" data-aos="fade-up">
             <!-- Page Header -->
             <div class="col-md-12 dx-pd-on-ph">
                 <img class="dx-shape-animated" src="assets/shape/1.svg" height="70" width="70" alt="">
@@ -188,7 +191,7 @@
 
     <!-- Page or Container 3 (My Skills) -->
     <div class="dx-container dx-bgdarkpurple">
-        <div class="row dx-page">
+        <div class="row dx-page" data-aos="fade-up">
             <!-- Page Header -->
             <div class="col-md-12 dx-pd-on-ph">
                 <img class="animate__animated animate__rubberBand animate__infinite" src="assets/shape/2.svg" height="50" width="50" alt="">
@@ -289,7 +292,7 @@
 
     <!-- Page or Container 4 (Recent Works) -->
     <div class="dx-container dx-bglightpurple">
-        <div class="row dx-page">
+        <div class="row dx-page" data-aos="fade-up">
             <!-- Page Header -->
             <div class="col-md-12 dx-pd-on-ph">
                 <img class="animate__animated animate__heartBeat animate__infinite" src="assets/shape/3.svg" height="50" width="50" alt="">
@@ -341,7 +344,7 @@
 
     <!-- Page or Container 5 (My Social Media) -->
     <div class="dx-container dx-bgdarkpurple">
-        <div class="row dx-page">
+        <div class="row dx-page" data-aos="fade-up">
             <!-- Page Header -->
             <div class="col-md-12 dx-pd-on-ph">
                 <img class="animate__animated animate__tada animate__infinite" src="assets/shape/4.svg" height="50" width="50" alt="">
@@ -497,7 +500,7 @@
     <!-- Page or Container 6 (Get In Touch) -->
     <div class="dx-container-100 dx-position-absolute" id="contact">
         <div class="dx-container dx-container-for-getintouch dx-bgdarkpurple">
-            <div class="row dx-page">
+            <div class="row dx-page" data-aos="fade-right">
                 <!-- Page Header -->
                 <div class="col-md-12 dx-pd-on-ph">
                     <!-- Header Text Section -->
@@ -558,7 +561,7 @@
 
         <!-- Footer Page -->
         <div class="dx-container dx-container-for-footer dx-bglightpurple">
-            <div class="row dx-page">
+            <div class="row dx-page" data-aos="fade-left">
                 <!-- Top Section -->
                 <div class="col-md-3 d-flex align-self-center dx-pd-on-ph">
                     <a class="navbar-brand" href="#">
@@ -587,6 +590,21 @@
                 </div>
             </div>
         </div>
+
+        <!-- Progress Bar (Scrolling Indicator - Fixed Position) -->
+        <div class="dx-progress-container">
+            <div class="dx-progress-bar" id="myBar"></div>
+        </div>
+
     </div>
+    <!-- Another JS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+            duration: 2000,
+            }
+        );
+    </script>
   </body>
 </html>

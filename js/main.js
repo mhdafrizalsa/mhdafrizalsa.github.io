@@ -1,3 +1,5 @@
+/* Script for Skills or Job Position Typewriter Effect */
+
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -54,3 +56,14 @@ window.onload = function() {
     css.innerHTML = ".dx-typewrite > .dx-wrap { border-right: 0.08em solid #f8be00}";
     document.body.appendChild(css);
 };
+
+/* Script for Scrolling or Progress Indicator on Top */
+
+window.onscroll = function() {scrollIndicator()};
+
+function scrollIndicator() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
