@@ -12,12 +12,14 @@
     color: white;
     text-decoration: none;
     padding: 1%;
-    right: 1%;
 }
-@media only screen and (max-width: 779px) {
+@media screen and (min-width: 240px) and (max-width: 812px) {
     #shots .shot {
         width: 50%;
-   }
+    }
+    #shots .shot .title {
+        font-size: 0.8rem !important;
+    }
 }
 #shots .shot:hover img {
     opacity: 0.25;
