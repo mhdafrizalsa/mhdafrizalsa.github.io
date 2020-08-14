@@ -57,8 +57,12 @@ window.onload = function() {
     document.body.appendChild(css);
 };
 
-/* Script for Scrolling or Progress Indicator on Top */
+/* Script for Scrolling or Progress Indicator on Top and Back to Top Button */
 
+//Get the button
+var mybutton = document.getElementById("dxBtn");
+        
+// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollIndicator()};
 
 function scrollIndicator() {
@@ -66,4 +70,39 @@ function scrollIndicator() {
     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
     document.getElementById("dxBar").style.width = scrolled + "%";
+    if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        mybutton.style.bottom = "30px";
+    } else {
+        mybutton.style.bottom = "-100px";
+    }
 }
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+/* Dribbble Shots Embed */
+
+// Set the Access Token
+var accessToken = '9f061d26c5a8be96b17a81718959a67dd54ca9669ca41752777193f7cc5be7c3';
+
+// Call Dribble v2 API
+$.ajax({
+    url: 'https://api.dribbble.com/v2/user/shots?access_token='+accessToken,
+    dataType: 'json',
+    type: 'GET',
+    success: function(data) {  
+      if (data.length > 0) { 
+        $.each(data.reverse(), function(i, val) {                
+          $('#shots').prepend(
+            '<a class="shot" target="_blank" href="'+ val.html_url +'" title="' + val.title + '"><div class="title">' + val.title + '</div><img src="'+ val.images.hidpi +'"/></a>'
+            )
+        })
+      }
+      else {
+        $('#shots').append('<p>No shots yet!</p>');
+      }
+    }
+});
