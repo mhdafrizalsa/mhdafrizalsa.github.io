@@ -86,7 +86,7 @@ function topFunction() {
 /* Dribbble Shots Embed */
 
 // Set the Access Token
-var accessToken = '9f061d26c5a8be96b17a81718959a67dd54ca9669ca41752777193f7cc5be7c3';
+var accessToken = '4d4c450a4657aa0746fdd4d92da1036611281a9e8a840a50d11a11c635912135';
 
 // Call Dribble v2 API
 $.ajax({
