@@ -402,6 +402,30 @@ h1 {
     width: 380px;
 }
 
+.dx-h-for-tentangsaya {
+    width: 300px;
+}
+
+.dx-h-for-skillssaya {
+    width: 230px;
+}
+
+.dx-h-for-hasilkarya {
+    width: 250px;
+}
+
+.dx-h-for-sosmedsaya {
+    width: 290px;
+}
+
+.dx-h-for-kontaksaya {
+    width: 270px;
+}
+
+.dx-h-for-idfooter {
+    width: 430px;
+}
+
 .dx-h-name {
     width: 100%;
     height: 100%;
@@ -684,6 +708,10 @@ h1 {
         position: inherit;
     }
 
+    .dx-btn-w-30ps {
+        width: 40%;
+    }
+
     .dx-container {
         padding-left: 15px;
         padding-right: 15px;
@@ -741,6 +769,30 @@ h1 {
     .dx-h-for-footer {
         width: 280px;
         height: 50px !important;
+    }
+
+    .dx-h-for-tentangsaya {
+        width: 260px;
+    }
+    
+    .dx-h-for-skillssaya {
+        width: 200px;
+    }
+    
+    .dx-h-for-hasilkarya {
+        width: 220px;
+    }
+    
+    .dx-h-for-sosmedsaya {
+        width: 250px;
+    }
+    
+    .dx-h-for-kontaksaya {
+        width: 240px;
+    }
+    
+    .dx-h-for-idfooter {
+        width: 320px;
     }
 
     .dx-text-for-getintouch {
