@@ -667,6 +667,10 @@ h1 {
         height: auto !important;
     }
 
+    .dx-right-lp {
+        margin-bottom: 25px;
+    }
+
     .dx-container-100 {
         height: auto;
     }
