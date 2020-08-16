@@ -51,8 +51,8 @@ h1 {
 .dx-container-for-footer {
     padding-top: 30px;
     padding-bottom: 0;
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    bottom: -10px;
 }
 
 .dx-page {
@@ -194,6 +194,10 @@ h1 {
 
 .dx-mg-lf-20 {
     margin-left: 20px ;
+}
+
+.dx-no-absolute {
+    position: relative;
 }
 
 .dx-text-center {
@@ -426,6 +430,30 @@ h1 {
     width: 430px;
 }
 
+.dx-h-for-datadiri {
+    width: 190px;
+}
+
+.dx-h-for-pendidikan {
+    width: 245px;
+}
+
+.dx-h-for-nonformal {
+    width: 490px;
+}
+
+.dx-h-for-magang {
+    width: 460px;
+}
+
+.dx-h-for-organisasi {
+    width: 510px;
+}
+
+.dx-h-for-prestasi {
+    width: 180px;
+}
+
 .dx-h-name {
     width: 100%;
     height: 100%;
@@ -627,6 +655,55 @@ h1 {
     margin-bottom: 10px;
 }
 
+.dx-table {
+    width: 100%;
+}
+
+.dx-table tr {
+    color: #ffffff;
+}
+
+.dx-table td {
+    padding-left: 0;
+}
+
+.dx-badge {
+    background: #00B3CC;
+    font-size: 1rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 8px;
+    margin-top: 8px;
+    font-weight: 500;
+}
+
+.dx-green-badge {
+    background: #00a637;
+    margin-top: 0 !important;
+    margin-bottom: 8px;
+}
+
+.dx-yellow-badge {
+    background: #F8BE00;
+    margin-top: 0 !important;
+    margin-bottom: 8px;
+}
+
+.dx-orange-badge {
+    background: #D83A00;
+    margin-top: 0 !important;
+    margin-bottom: 8px;
+}
+
+.dx-tb-icon {
+    width: 50px;
+}
+
+.dx-b-fw-500 {
+    font-weight: 500;
+}
+
 /* Mobile Queries */
 
 @media screen and (min-width: 240px) and (max-width: 812px) {
@@ -797,6 +874,30 @@ h1 {
     
     .dx-h-for-idfooter {
         width: 320px;
+    }
+
+    .dx-h-for-datadiri {
+        width: 170px;
+    }
+
+    .dx-h-for-pendidikan {
+        width: 220px;
+    }
+
+    .dx-h-for-nonformal {
+        width: 350px;
+    }
+
+    .dx-h-for-magang {
+        width: 350px;
+    }
+
+    .dx-h-for-organisasi {
+        width: 350px;
+    }
+
+    .dx-h-for-prestasi {
+        width: 160px;
     }
 
     .dx-text-for-getintouch {
