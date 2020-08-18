@@ -762,6 +762,7 @@ h1 {
 
 .dx-skillsoftware {
     padding: 40px;
+    display: flex;
 }
 
 .dx-skillsoftware .iconify {
@@ -953,17 +954,7 @@ h1 {
         width: 220px;
     }
 
-    .dx-h-for-nonformal {
-        width: 350px;
-        height: 120px;
-    }
-
-    .dx-h-for-magang {
-        width: 350px;
-        height: 120px;
-    }
-
-    .dx-h-for-organisasi {
+    .dx-h-for-nonformal, .dx-h-for-magang, .dx-h-for-organisasi, .dx-h-for-frontend, .dx-h-for-backend {
         width: 350px;
         height: 120px;
     }
@@ -972,6 +963,18 @@ h1 {
         width: 160px;
     }
 
+    .dx-h-for-uiuxdesign {
+        width: 240px;
+    }
+    
+    .dx-h-for-webdesign {
+        width: 220px;
+    }
+
+    .dx-h-for-graphicdesign {
+        width: 290px;
+    }
+    
     .dx-text-for-getintouch {
         margin-bottom: 0;
         font-size: 1rem;
