@@ -629,6 +629,11 @@ h1 {
     line-height: 2.5rem;
 }
 
+.dx-htext-middle {
+    display: flex;
+    align-items: center;
+}
+
 .dx-endbtn {
     margin-top: 10px;
     color: #5748f7;
@@ -772,6 +777,14 @@ h1 {
 
 .dx-skillsoftware .iconify:hover {
     margin-left: 15px;
+}
+
+.PIN_1598000018412_c3 {
+    max-width: 100% !important;
+}
+
+.PIN_1598000018412_embed_grid {
+    
 }
 
 /* Mobile Queries */
